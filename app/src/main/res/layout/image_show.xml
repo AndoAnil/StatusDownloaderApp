@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_500sdp">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:id="@+id/selectedImage"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/selectedImage"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/shareimage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="Share"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:drawableTint="@android:color/white"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/downloadimage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="Download"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+            android:drawableTint="@android:color/white"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
